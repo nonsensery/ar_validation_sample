@@ -7,7 +7,6 @@ COPY Gemfile /code/Gemfile
 
 RUN ["bundle", "install", "-j4"]
 
-EXPOSE 3000
+COPY . /code
 
-CMD ["rails", "server", "--binding=0.0.0.0"]
-
+CMD ["rake", "test"]
