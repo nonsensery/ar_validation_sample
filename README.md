@@ -4,8 +4,14 @@ This is a sample project that shows a weird Active Record issue. I consider it a
 
 ```sh
 bundle install
-
 rake test
+```
+
+or:
+
+```sh
+docker build -t ar_validation_sample .
+docker run --rm -it ar_validation_sample
 ```
 
 You should see output like this:
